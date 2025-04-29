@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding and Navigating the DOM</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+</body>
+</html>
+<script>
+    var header = document.createElement("h1");
+    header.innerHTML = "Welcome to the DOM World!";
+
+    var para = document.createElement("p");
+    para.innerHTML = "This is a simple introduction to DOM manipulation using JavaScript.";
+    para.style.color = "blue";
+    para.style.fontSize = "20px";
+
+    var div = document.createElement("div");
+    div.style.backgroundColor = "yellow";
+    div.style.padding = "20px";
+    div.style.border = "2px solid black";
+
+    div.appendChild(header);
+    div.appendChild(para);
+    document.body.appendChild(div);
+    
+</script>
