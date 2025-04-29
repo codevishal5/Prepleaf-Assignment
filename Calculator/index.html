@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+
+#container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(38, 170, 126);
+    font-weight: bold;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.key {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(233, 231, 228);
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.key:hover {
+    background-color: #ddd;
+}
+.key:nth-child(4),
+.key:nth-child(8),
+.key:nth-child(12),
+.key:nth-child(15),
+.key:nth-child(16) {
+    background-color: black;
+    color: white;
+}
+
+.key:nth-child(13){
+    background-color: red;
+    color: white;
+}
+
+
+   
+
+</style>
+<body>
+    <h1>Masai Calculator</h1>
+
+    <div id="container">
+        <div id="display"></div>
+        <div class="keyboard">
+            <div class="key wide">1</div>
+            <div class="key wide">2</div>
+            <div class="key wide">3</div>
+            <div class="key wide">+</div>
+            <div class="key wide">4</div>
+            <div class="key wide">5</div>
+            <div class="key wide">6</div>
+            <div class="key wide">-</div>
+            <div class="key wide">7</div>
+            <div class="key wide">8</div>
+            <div class="key wide">9</div>
+            <div class="key wide">*</div>
+            <div class="key wide">C</div>
+            <div class="key wide">0</div>
+            <div class="key wide">=</div>
+            <div class="key wide">/</div>
+        </div>
+    </div>
+        
+    
+</body>
+</html>
