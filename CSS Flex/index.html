@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEX</title>
+</head>
+<style>
+
+#container{
+    border: 2.5px dotted;
+    background-color: bisque;
+    margin: 5%;
+
+}
+    #container > div {
+        
+        display: flex;
+        padding-bottom: 5px;
+        margin: 20px;
+        border: 2.5px solid;
+        background-color: white;
+    
+
+    }
+
+    div > img{
+        width:  150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        padding-top: 10px;
+        padding-left: 1%;
+    }
+
+   @media screen and (max-width: 600px) {
+        #container > div {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+
+</style>
+<body>
+
+    <div id="container">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwBaSkF-03bnA-JaqRQJZQ-z8Co1zQCMKsw&s" alt="">                
+            <div>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error soluta quod quam nostrum reprehenderit placeat earum officia ipsum fugit vitae exercitationem voluptatem quis, voluptates ab temporibus necessitatibus ullam aliquid vel.
+                Similique non voluptates hic numquam deserunt maiores, magnam id eaque eum optio quos natus doloribus harum sapiente a, voluptate at! Dolores optio asperiores velit mollitia nobis aut accusamus incidunt fuga!</p>
+                <a href="">Read More</a>
+
+            </div>
+            
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwBaSkF-03bnA-JaqRQJZQ-z8Co1zQCMKsw&s" alt="">                
+            <div>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error soluta quod quam nostrum reprehenderit placeat earum officia ipsum fugit vitae exercitationem voluptatem quis, voluptates ab temporibus necessitatibus ullam aliquid vel.
+                Similique non voluptates hic numquam deserunt maiores, magnam id eaque eum optio quos natus doloribus harum sapiente a, voluptate at! Dolores optio asperiores velit mollitia nobis aut accusamus incidunt fuga!</p>
+                <a href="">Read More</a>
+
+            </div>
+            
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwBaSkF-03bnA-JaqRQJZQ-z8Co1zQCMKsw&s" alt="">                
+            <div>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error soluta quod quam nostrum reprehenderit placeat earum officia ipsum fugit vitae exercitationem voluptatem quis, voluptates ab temporibus necessitatibus ullam aliquid vel.
+                Similique non voluptates hic numquam deserunt maiores, magnam id eaque eum optio quos natus doloribus harum sapiente a, voluptate at! Dolores optio asperiores velit mollitia nobis aut accusamus incidunt fuga!</p>
+                <a href="">Read More</a>
+
+            </div>
+            
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwBaSkF-03bnA-JaqRQJZQ-z8Co1zQCMKsw&s" alt="">                
+            <div>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error soluta quod quam nostrum reprehenderit placeat earum officia ipsum fugit vitae exercitationem voluptatem quis, voluptates ab temporibus necessitatibus ullam aliquid vel.
+                Similique non voluptates hic numquam deserunt maiores, magnam id eaque eum optio quos natus doloribus harum sapiente a, voluptate at! Dolores optio asperiores velit mollitia nobis aut accusamus incidunt fuga!</p>
+                <a href="">Read More</a>
+
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
