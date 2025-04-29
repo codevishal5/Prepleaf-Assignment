@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Keyboard</title>
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+            margin: 5%;
+        }
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            gap: 5px;
+            max-width: 1200px;
+        }
+        .key {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .wide {
+            grid-column: span 2;
+        }
+        .extra-wide {
+            grid-column: span 6;
+        }
+        .key:hover {
+            background-color: #d0d0d0;
+            cursor: pointer;
+        }
+        .key:active {
+            background-color: #c0c0c0;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .key:focus {
+            outline: none;
+            box-shadow: 0 0 5px #007bff;
+        }
+        .key:focus-visible {
+            outline: 2px solid #007bff;
+        }
+        .key:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .key:focus:not(:focus-visible) {
+            box-shadow: none;
+        }
+        .key:focus-visible {
+            box-shadow: 0 0 5px #007bff;
+        }
+        .key:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .key:focus-visible {
+            outline: 2px solid #007bff;
+        }
+        .key:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .key:focus-visible {
+            box-shadow: 0 0 5px #007bff;
+        }
+        .key:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .key:focus-visible {
+            outline: 2px solid #007bff;
+        }
+        .key:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .key:focus-visible {
+            box-shadow: 0 0 5px #007bff;
+        }
+        .key:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .key:focus-visible {
+            outline: 2px solid #007bff;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Grid Keyboard</h1>
+
+    <div class="keyboard">
+        <!-- Row 1: Function Keys -->
+        <div class="key">Esc</div>
+        <div class="key">F1</div>
+        <div class="key">F2</div>
+        <div class="key">F3</div>
+        <div class="key">F4</div>
+        <div class="key">F5</div>
+        <div class="key">F6</div>
+        <div class="key">F7</div>
+        <div class="key">F8</div>
+        <div class="key">F9</div>
+        <div class="key">F10</div>
+        <div class="key">F11</div>
+        <div class="key">F12</div>
+        <div class="key">PrtSc</div>
+        <div class="key">ScrLk</div>
+
+        <!-- Row 2: Numbers and Symbols -->
+        <div class="key">~</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">=</div>
+        <div class="key wide">Backspace</div>
+
+        <!-- Row 3: QWERTY -->
+        <div class="key wide">Tab</div>
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key">\</div>
+
+        <!-- Row 4: ASDF -->
+        <div class="key wide">Caps</div>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">;</div>
+        <div class="key">'</div>
+        <div class="key wide">Enter</div>
+
+        <!-- Row 5: ZXCV -->
+        <div class="key wide">Shift</div>
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+        <div class="key wide">Shift</div>
+
+        <!-- Row 6: Space and Modifiers -->
+        <div class="key">Ctrl</div>
+        <div class="key">Win</div>
+        <div class="key">Alt</div>
+        <div class="key extra-wide">Space</div> <!-- Spacebar -->
+        <div class="key">Alt</div>
+        <div class="key">Fn</div>
+        <div class="key">Ctrl</div>
+        <div class="key">←</div>
+        <div class="key">↑</div>
+        <div class="key">↓</div>
+        <div class="key">→</div>
+    </div>
+
+</body>
+</html>
