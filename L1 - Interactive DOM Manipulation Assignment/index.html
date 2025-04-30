@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1 - Interactive DOM Manipulation Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #interactive-div {
+            width: 300px;
+            height: 150px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin: 10px 0;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive DOM Manipulation</h1>
+
+    <div class="input-group">
+        <input type="text" id="color-input" placeholder="Enter a color (e.g., red, #f0f0f0)">
+        <button id="change-bg-btn">Change Background</button>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="text-input" placeholder="Enter text to update">
+        <button id="update-text-btn">Update Text</button>
+    </div>
+
+    <div id="interactive-div">This is the interactive div</div>
+
+    <script>
+        // Task 1: Change Background Color
+        document.getElementById('change-bg-btn').addEventListener('click', function() {
+            const colorInput = document.getElementById('color-input').value.trim();
+            const div = document.getElementById('interactive-div');
+
+            // Try applying the color
+            div.style.backgroundColor = colorInput;
+
+            // Check if the color is valid
+            const isValidColor = div.style.backgroundColor !== '';
+            if (!isValidColor) {
+                alert('Invalid color name!');
+                div.style.backgroundColor = 'lightgray'; // Reset to default
+            }
+        });
+
+        // Task 2: Update Text Content
+        document.getElementById('update-text-btn').addEventListener('click', function() {
+            const textInput = document.getElementById('text-input').value.trim();
+            const div = document.getElementById('interactive-div');
+
+            if (textInput === '') {
+                alert('Please enter some text!');
+            } else {
+                div.textContent = textInput;
+            }
+        });
+    </script>
+</body>
+</html>
