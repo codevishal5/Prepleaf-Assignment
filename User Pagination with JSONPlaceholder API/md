@@ -1,0 +1,31 @@
+Title
+User Pagination with JSONPlaceholder API
+
+Level
+1
+
+Time to solve the problem
+1.5 hours
+
+Overview
+This problem focuses on fetching paginated user data from the JSONPlaceholder API and implementing a pagination system using buttons. The goal is to create a user-friendly interface that allows users to navigate through different pages and view data accordingly.
+
+Detailed Explanation
+Topics
+Asynchronous Programming
+API Fetching
+Pagination
+Error Handling
+Setup Guidelines and Instructions
+Use the JSONPlaceholder API (https://jsonplaceholder.typicode.com/users) to fetch user data.
+Implement pagination using buttons, where each button corresponds to a specific page, and clicking on a button fetches data for that page.
+Display a limited number of users per page (e.g., Page 1, Limit 6).
+Problem Statement
+Create a web application that fetches user data from the JSONPlaceholder API and implements pagination using buttons. Follow the guidelines below:
+
+Fetch user data for the initial page (Page 1, Limit 6) on page load.
+hint: https://jsonplaceholder.typicode.com/users?_page=1&_limit=6
+Display the fetched user data in a visually appealing manner.
+Implement pagination buttons that allow users to navigate to different pages.
+Clicking on a pagination button should fetch and display data for the corresponding page.
+Implement proper error handling for API requests.
