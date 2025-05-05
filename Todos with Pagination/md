@@ -1,0 +1,22 @@
+Title
+Todos with Pagination
+
+Level
+0
+
+Time to solve the problem
+30 Minutes
+
+Overview
+In this assignment, you have to make paginated fetch request and append the data into DOM based upon the page number
+
+Detailed Explanation
+Topics
+Fetch
+DOM
+Pagination
+Setup Guidelines and Instructions
+Initial Setup: create one html and js file and start writing your code there
+Problem Statement
+Create a Todo App: use the given backend api link and fetch the data of todos. make a pagination query and append it to the DOM also create the buttons resepectively and upon clicking on buttons make the respective fetch requests and append the data to the DOM accordingly fetchTodosPagination.png
+https://jsonplaceholder.typicode.com/todos
